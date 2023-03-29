@@ -8,8 +8,12 @@
 </head>
 <body>
     <h1>Isss this your number... <%= rand %> ?</h1>
-    <% if(num % 2 === 0){ %>
+    <% if(rand % 2 === 0){ %>
     <h2>That's pretty even!</h2>
+    <% }else if(rand === 69){ %>
+    <h3>nice B)</h3>
+    <% } else{ %>
+    <h2>hmmmm... that's a bit odd</h2>
     <% } %>
 </body>
 </html>
