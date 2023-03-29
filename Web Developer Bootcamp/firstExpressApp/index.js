@@ -6,7 +6,7 @@ const app = express()
 //     res.send("Salutations internet traveller, we have received your correspondence :D")
 // })
 app.get('/', (req, res) => {
-    res.send('The page of Home')
+    res.send('The page of Home!')
 })
 
 app.get('/r/:subreddit', (req, res) => {
