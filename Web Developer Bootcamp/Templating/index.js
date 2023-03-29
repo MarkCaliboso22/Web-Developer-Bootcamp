@@ -9,6 +9,13 @@ app.get('/', (req, res) => {
     res.render('home.ejs')
 })
 
+app.get('/mushrooms', (req, res) => {
+    const mushrooms = [
+        'Button', 'Cup', 'Flat', 'Swiss', 'Portabello', 'Shiitake', 'Oyster', 'Enoki' 
+    ]
+    res.render('mushrooms', { mushrooms })
+})
+
 app.get('/rand', (req, res) => {
     const num = Math.floor(Math.random() * 100) + 1;
     res.render('random', { rand: num })
