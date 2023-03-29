@@ -14,6 +14,11 @@ app.get('/r/:subreddit', (req, res) => {
     res.send(`<h1>Browsing the ${subreddit} subreddit</h1>`)
 })
 
+app.get('/r/:subreddit/:postId', (req, res) => {
+    const { subreddit, postId } = req.params;
+    res.send(`<h1>This is from Post ID: ${postId} on the ${subreddit} subreddit</h1>`)
+})
+
 app.post('/info', (req, res) => {
     res.send('silly billy this is a post request not the /info get request')
 })
